@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 420" role="img" aria-label="NUQA Lifting AH-8 — tube doypack doré avec applicateur galets rosés">
+  <defs>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E8D199"/>
+      <stop offset="35%" stop-color="#D4B568"/>
+      <stop offset="65%" stop-color="#C9A85A"/>
+      <stop offset="100%" stop-color="#A8895A"/>
+    </linearGradient>
+    <linearGradient id="goldShine" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.55"/>
+      <stop offset="40%" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.2"/>
+    </linearGradient>
+    <radialGradient id="rose" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#F4DDD3"/>
+      <stop offset="60%" stop-color="#E8C4B8"/>
+      <stop offset="100%" stop-color="#C49A8B"/>
+    </radialGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#A8895A" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Tube body (gold doypack) -->
+  <g filter="url(#shadow)">
+    <path d="M 60 30 Q 60 20 70 20 L 210 20 Q 220 20 220 30 L 220 320 L 60 320 Z"
+          fill="url(#gold)"/>
+    <!-- crimped top edge -->
+    <path d="M 60 20 Q 70 12 80 20 Q 90 12 100 20 Q 110 12 120 20 Q 130 12 140 20 Q 150 12 160 20 Q 170 12 180 20 Q 190 12 200 20 Q 210 12 220 20"
+          stroke="#A8895A" stroke-width="1.5" fill="none" opacity="0.7"/>
+    <!-- light shine overlay -->
+    <path d="M 60 30 Q 60 20 70 20 L 210 20 Q 220 20 220 30 L 220 320 L 60 320 Z"
+          fill="url(#goldShine)"/>
+    <!-- subtle vertical fold -->
+    <line x1="140" y1="22" x2="140" y2="320" stroke="#FFFFFF" stroke-width="1" opacity="0.15"/>
+  </g>
+
+  <!-- NUQA logo -->
+  <text x="140" y="100" text-anchor="middle"
+        font-family="'Cormorant Garamond', Georgia, serif" font-size="34" font-weight="500"
+        letter-spacing="6" fill="#1A1A1A">NUQA</text>
+
+  <!-- LIFTING -->
+  <text x="140" y="160" text-anchor="middle"
+        font-family="'Playfair Display', 'Cormorant Garamond', serif" font-size="32" font-weight="700"
+        letter-spacing="2" fill="#1A1A1A">LIFTING</text>
+
+  <!-- subtitle -->
+  <text x="140" y="180" text-anchor="middle"
+        font-family="'Inter', sans-serif" font-size="9" letter-spacing="2"
+        fill="#1A1A1A" opacity="0.85">SOIN COU &amp; DÉCOLLETÉ</text>
+
+  <!-- AH-8 -->
+  <text x="140" y="240" text-anchor="middle"
+        font-family="'Playfair Display', serif" font-size="42" font-weight="700"
+        letter-spacing="2" fill="#1A1A1A">AH-8</text>
+
+  <!-- pill: HEXAPEPTIDE-8 TENSEUR -->
+  <rect x="68" y="252" width="144" height="20" rx="2"
+        stroke="#1A1A1A" stroke-width="0.8" fill="none"/>
+  <text x="140" y="266" text-anchor="middle"
+        font-family="'Inter', sans-serif" font-size="8" letter-spacing="1.5"
+        fill="#1A1A1A">HEXAPEPTIDE-8 TENSEUR</text>
+
+  <!-- V signature -->
+  <path d="M 128 286 L 140 302 L 152 286" stroke="#1A1A1A" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- weight -->
+  <text x="140" y="316" text-anchor="middle"
+        font-family="'Inter', sans-serif" font-size="7" letter-spacing="0.5"
+        fill="#1A1A1A" opacity="0.7">Poids net : 100 g / 3,53 oz.</text>
+
+  <!-- Applicator base (white) -->
+  <path d="M 80 320 L 200 320 L 200 380 Q 200 388 192 388 L 88 388 Q 80 388 80 380 Z"
+        fill="#FAFAFA" stroke="#E0DCD5" stroke-width="0.5"/>
+
+  <!-- center button on applicator -->
+  <circle cx="140" cy="328" r="3" fill="#E0DCD5"/>
+
+  <!-- Two rose applicator stones -->
+  <ellipse cx="110" cy="378" rx="20" ry="12" fill="url(#rose)"/>
+  <ellipse cx="170" cy="378" rx="20" ry="12" fill="url(#rose)"/>
+
+  <!-- subtle highlight on stones -->
+  <ellipse cx="105" cy="372" rx="8" ry="3" fill="#FFFFFF" opacity="0.45"/>
+  <ellipse cx="165" cy="372" rx="8" ry="3" fill="#FFFFFF" opacity="0.45"/>
+</svg>

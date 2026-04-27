@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#FAF6F0" />
+  <title>NUQA Lifting AH-8 — Soin tenseur cou & décolleté avec applicateur galets</title>
+  <meta name="description" content="Soin tenseur cou & décolleté à l'Hexapeptide-8 avec applicateur galets intégré. Édition fondatrice 49€. 100 g — environ 3 mois de rituel." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@400;500;600&family=Italiana&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M3 4 L8 12 L13 4' fill='none' stroke='%23C9A96E' stroke-width='1.5'/%3E%3C/svg%3E" />
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="topbar__inner">
+    <span>Livraison offerte dès 50€</span>
+    <span class="topbar__sep">·</span>
+    <span>Satisfait ou remboursé 30 jours</span>
+    <span class="topbar__sep">·</span>
+    <span>Édition fondatrice — stock limité</span>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="header__inner">
+    <nav class="nav" aria-label="principale gauche">
+      <a href="index.html#rituel">Le rituel</a>
+      <a href="index.html#science">La science</a>
+      <a href="index.html#histoire">Histoire</a>
+    </nav>
+    <button class="burger" aria-label="Menu">
+      <svg width="24" height="24"><use href="assets/icons.svg#i-burger"/></svg>
+    </button>
+    <a href="index.html" class="header__logo">NUQA</a>
+    <nav class="nav nav--right" aria-label="principale droite">
+      <a href="#avis">Avis</a>
+      <a href="#faq">FAQ</a>
+      <a href="#" aria-label="Compte"><svg width="20" height="20"><use href="assets/icons.svg#i-user"/></svg></a>
+      <a href="#" class="nav__icon" aria-label="Panier">
+        <svg width="20" height="20"><use href="assets/icons.svg#i-cart"/></svg>
+        <span class="cart-count">0</span>
+      </a>
+    </nav>
+    <div class="header__icons">
+      <a href="#" aria-label="Compte"><svg width="22" height="22"><use href="assets/icons.svg#i-user"/></svg></a>
+      <a href="#" aria-label="Panier"><svg width="22" height="22"><use href="assets/icons.svg#i-cart"/></svg></a>
+    </div>
+  </div>
+</header>
+
+<!-- PDP -->
+<section class="pdp">
+  <div class="container">
+    <nav class="pdp__breadcrumb" aria-label="Fil d'ariane">
+      <a href="index.html">Accueil</a>  /  <a href="#">Boutique</a>  /  <span>NUQA Lifting AH-8</span>
+    </nav>
+
+    <div class="pdp__grid">
+      <!-- Gallery -->
+      <div class="gallery">
+        <div class="gallery__main" id="galleryMain">
+          <img src="assets/product.svg" alt="NUQA Lifting AH-8 — packshot principal" id="galleryMainImg" />
+        </div>
+        <div class="gallery__thumbs" id="galleryThumbs">
+          <button class="gallery__thumb is-active" data-label="Packshot">1</button>
+          <button class="gallery__thumb" data-label="Échelle main">2</button>
+          <button class="gallery__thumb" data-label="Application cou">3</button>
+          <button class="gallery__thumb" data-label="Macro galets">4</button>
+          <button class="gallery__thumb" data-label="Texture crème">5</button>
+          <button class="gallery__thumb" data-label="Vidéo geste">▶</button>
+        </div>
+      </div>
+
+      <!-- Buy block -->
+      <aside class="buy" id="buy">
+        <p class="buy__eyebrow">Édition fondatrice — stock limité</p>
+        <h1 class="buy__title">NUQA Lifting AH-8</h1>
+        <p class="buy__sub">Soin tenseur cou &amp; décolleté avec applicateur galets intégré · 100 g</p>
+
+        <div class="buy__rating">
+          <span class="buy__rating-stars">★★★★★</span>
+          <a href="#avis">Premiers avis testeuses fondatrices</a>
+        </div>
+
+        <div class="buy__price-row">
+          <span class="buy__price-old">69€</span>
+          <span class="buy__price-now">49€</span>
+        </div>
+        <p class="buy__installment">Tarif édition fondatrice — ou 3× 16,33€ sans frais</p>
+
+        <div class="buy__urgency">
+          <span class="buy__urgency-dot"></span>
+          <span><strong>Édition fondatrice limitée à 200 unités.</strong> Stock à reconstituer après le 1er run.</span>
+        </div>
+
+        <div class="buy__qty" role="group" aria-label="Quantité">
+          <button type="button" data-qty="-1" aria-label="Diminuer">−</button>
+          <input type="number" value="1" min="1" max="10" aria-label="Quantité" id="qty" />
+          <button type="button" data-qty="+1" aria-label="Augmenter">+</button>
+        </div>
+
+        <div class="buy__cta-stack">
+          <button class="btn btn-gold btn-block btn-lg" id="addToCart">Ajouter au panier — 49€</button>
+          <button class="btn btn-primary btn-block">Acheter en 1 clic</button>
+          <div class="buy__cta-express">Apple Pay · Shop Pay · PayPal Express</div>
+        </div>
+
+        <div class="buy__trust">
+          <div class="buy__trust-item"><svg class="buy__trust-icon"><use href="assets/icons.svg#i-truck"/></svg><div><strong>Livraison offerte dès 50€</strong> · Expédition sous 48h</div></div>
+          <div class="buy__trust-item"><svg class="buy__trust-icon"><use href="assets/icons.svg#i-return"/></svg><div><strong>Satisfait ou remboursé 30 jours</strong> · Retour offert</div></div>
+          <div class="buy__trust-item"><svg class="buy__trust-icon"><use href="assets/icons.svg#i-leaf"/></svg><div><strong>Vegan · Cruelty-free</strong> · Conforme CE 1223/2009</div></div>
+          <div class="buy__trust-item"><svg class="buy__trust-icon"><use href="assets/icons.svg#i-check"/></svg><div><strong>Service client français</strong> · Lundi-vendredi 9h-18h</div></div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- TABS -->
+<nav class="tabs">
+  <div class="container tabs__inner" role="tablist">
+    <a class="tab is-active" href="#benefices" role="tab">Bénéfices</a>
+    <a class="tab" href="#ingredients" role="tab">Ingrédients</a>
+    <a class="tab" href="#mode" role="tab">Mode d'emploi</a>
+    <a class="tab" href="#compare" role="tab">Comparatif</a>
+    <a class="tab" href="#avis" role="tab">Avis</a>
+    <a class="tab" href="#faq" role="tab">FAQ</a>
+  </div>
+</nav>
+
+<!-- BÉNÉFICES -->
+<section class="section section--cream" id="benefices">
+  <div class="container">
+    <div class="solution__head" data-reveal>
+      <p class="eyebrow">Ce que NUQA fait pour vous</p>
+      <h2 class="h2">Quatre bénéfices. Aucune promesse en l'air.</h2>
+    </div>
+    <div class="solution__grid">
+      <article class="card">
+        <svg class="card__icon"><use href="assets/icons.svg#i-flask"/></svg>
+        <h3 class="card__title">Aspect tenseur</h3>
+        <p class="card__text">L'Hexapeptide-8 vise l'apparence des plis horizontaux du cou. Ressenti progressif sur 3 à 4 semaines d'usage régulier.</p>
+      </article>
+      <article class="card">
+        <svg class="card__icon"><use href="assets/icons.svg#i-pebble"/></svg>
+        <h3 class="card__title">Drainage et confort</h3>
+        <p class="card__text">Les galets froids stimulent la microcirculation. La sensation de fraîcheur décongestionne immédiatement la zone — particulièrement le matin.</p>
+      </article>
+      <article class="card">
+        <svg class="card__icon"><use href="assets/icons.svg#i-droplet"/></svg>
+        <h3 class="card__title">Hydratation longue durée</h3>
+        <p class="card__text">Texture riche non grasse à l'acide hyaluronique et au beurre de karité. Pénètre en moins de 30 secondes, ne laisse aucun film.</p>
+      </article>
+      <article class="card">
+        <svg class="card__icon"><use href="assets/icons.svg#i-clock"/></svg>
+        <h3 class="card__title">Geste rituel quotidien</h3>
+        <p class="card__text">Conçu pour s'intégrer en 90 secondes à votre routine actuelle. Sans modifier vos autres soins, sans étape supplémentaire complexe.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- INGREDIENTS -->
+<section class="section section--offwhite" id="ingredients">
+  <div class="container">
+    <div class="solution__head" data-reveal>
+      <p class="eyebrow">Formule</p>
+      <h2 class="h2">Trois actifs. Et la transparence sur les autres.</h2>
+    </div>
+    <div class="solution__grid">
+      <article class="card">
+        <h3 class="card__title">Acétyl Hexapeptide-8</h3>
+        <p class="card__sub">Le pilier tenseur</p>
+        <p class="card__text">Peptide de synthèse étudié depuis plus de 20 ans. Cible l'apparence des micro-tensions responsables des plis horizontaux du cou et du décolleté.</p>
+      </article>
+      <article class="card">
+        <h3 class="card__title">Acide Hyaluronique</h3>
+        <p class="card__sub">L'hydratation profonde</p>
+        <p class="card__text">Trois poids moléculaires différents pour hydrater à plusieurs niveaux du derme. Peau plus rebondie, plus confortable, dès la première application.</p>
+      </article>
+      <article class="card">
+        <h3 class="card__title">Beurre de karité &amp; Niacinamide</h3>
+        <p class="card__sub">Le confort et l'éclat</p>
+        <p class="card__text">Karité bio nourrissant pour les peaux desséchées. Niacinamide (vitamine B3) pour uniformiser le grain de peau et atténuer les taches du décolleté.</p>
+      </article>
+    </div>
+    <div style="margin-top:48px; padding:32px; background:var(--cream); border:1px solid var(--line); border-radius:4px; max-width:900px; margin-inline:auto;">
+      <p class="fineprint" style="margin:0; line-height:1.8;"><strong style="color:var(--black)">INCI complète</strong> — Aqua, Glycerin, Caprylic/Capric Triglyceride, Cetyl Alcohol, Butyrospermum Parkii (Shea) Butter, Niacinamide, Sodium Hyaluronate, Acetyl Hexapeptide-8, Tocopheryl Acetate, Panthenol, Phenoxyethanol, Ethylhexylglycerin. <em>Liste à confirmer après réception du COA fournisseur.</em></p>
+    </div>
+  </div>
+</section>
+
+<!-- MODE D'EMPLOI -->
+<section class="section section--cream" id="mode">
+  <div class="container">
+    <div class="solution__head">
+      <p class="eyebrow">Le rituel — 90 secondes</p>
+      <h2 class="h2">Quatre gestes. Matin et soir.</h2>
+    </div>
+    <div class="solution__grid">
+      <article class="card">
+        <p class="card__sub" style="font-size:14px; letter-spacing:0.2em; text-transform:uppercase;">Étape 01</p>
+        <h3 class="card__title">Préparez la zone</h3>
+        <p class="card__text">Sur peau propre et sèche. Pas besoin d'autre soin avant — NUQA s'applique en première intention sur le cou.</p>
+      </article>
+      <article class="card">
+        <p class="card__sub" style="font-size:14px; letter-spacing:0.2em; text-transform:uppercase;">Étape 02</p>
+        <h3 class="card__title">Dosez la noisette</h3>
+        <p class="card__text">Pressez l'équivalent d'une noisette directement sur les galets. Pas plus — la formule est concentrée.</p>
+      </article>
+      <article class="card">
+        <p class="card__sub" style="font-size:14px; letter-spacing:0.2em; text-transform:uppercase;">Étape 03</p>
+        <h3 class="card__title">Massez en remontant</h3>
+        <p class="card__text">Du décolleté vers le menton. Toujours vers le haut. Mouvements lents, sans appuyer. 60 secondes suffisent.</p>
+      </article>
+      <article class="card">
+        <p class="card__sub" style="font-size:14px; letter-spacing:0.2em; text-transform:uppercase;">Étape 04</p>
+        <h3 class="card__title">Finissez par les côtés</h3>
+        <p class="card__text">Galets sur les côtés du cou, mouvement de bas en haut, des clavicules vers les oreilles. Effet drainant immédiat.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- COMPARATIF -->
+<section class="compare" id="compare">
+  <div class="container">
+    <div class="compare__head">
+      <p class="eyebrow">Pourquoi NUQA est différent</p>
+      <h2 class="h2">Trois approches. Trois philosophies.</h2>
+    </div>
+    <table class="compare__table">
+      <thead>
+        <tr>
+          <th></th>
+          <th>Crème anti-âge classique</th>
+          <th>Lifting / radiofréquence</th>
+          <th class="col-nuqa">NUQA Lifting AH-8</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Zone ciblée</th>
+          <td>Visage uniquement</td>
+          <td>Visage (+ cou en option)</td>
+          <td class="col-nuqa">Cou &amp; décolleté spécifiquement</td>
+        </tr>
+        <tr>
+          <th>Actif tenseur</th>
+          <td>Variable, peu ciblé</td>
+          <td>Action mécanique</td>
+          <td class="col-nuqa">Hexapeptide-8 + galets</td>
+        </tr>
+        <tr>
+          <th>Geste massage</th>
+          <td>Mains uniquement</td>
+          <td>Cabine professionnelle</td>
+          <td class="col-nuqa">Applicateur galets intégré</td>
+        </tr>
+        <tr>
+          <th>Coût mensuel</th>
+          <td>30 à 80€</td>
+          <td>200 à 500€/séance</td>
+          <td class="col-nuqa">~16€/mois (cure 3 mois)</td>
+        </tr>
+        <tr>
+          <th>Invasivité</th>
+          <td>Aucune</td>
+          <td>Modérée à forte</td>
+          <td class="col-nuqa">Aucune</td>
+        </tr>
+        <tr>
+          <th>Temps quotidien</th>
+          <td>1 à 2 minutes</td>
+          <td>Hebdo / mensuel</td>
+          <td class="col-nuqa">90 secondes</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- AVIS -->
+<section class="section section--cream" id="avis">
+  <div class="container">
+    <div class="testimonials__head">
+      <p class="eyebrow">Édition fondatrice — premiers retours</p>
+      <h2 class="h2">Les premières voix.</h2>
+      <p class="lead lead-center">Avis vérifiés des testeuses fondatrices. Les avis clients seront ajoutés au fil des livraisons, sans tri ni filtrage.</p>
+    </div>
+    <div class="testimonials__scroller">
+      <article class="testimonial">
+        <div class="testimonial__stars">★★★★★</div>
+        <blockquote class="testimonial__quote">« Le geste est devenu un moment pour moi. Le froid des galets le matin, c'est un réveil instantané. »</blockquote>
+        <div class="testimonial__meta">
+          <span class="testimonial__avatar">A</span>
+          <div><strong>Aïcha, 41 ans</strong><br /><span>Testeuse fondatrice · Semaine 3</span></div>
+        </div>
+      </article>
+      <article class="testimonial">
+        <div class="testimonial__stars">★★★★★</div>
+        <blockquote class="testimonial__quote">« Sceptique au départ. C'est l'applicateur qui fait la différence — ma kiné a remarqué le drainage. »</blockquote>
+        <div class="testimonial__meta">
+          <span class="testimonial__avatar">S</span>
+          <div><strong>Sylvie, 47 ans</strong><br /><span>Testeuse fondatrice · Semaine 4</span></div>
+        </div>
+      </article>
+      <article class="testimonial">
+        <div class="testimonial__stars">★★★★☆</div>
+        <blockquote class="testimonial__quote">« Vraie différence à 5 semaines. Une étoile en moins parce que j'aurais aimé un format plus généreux. »</blockquote>
+        <div class="testimonial__meta">
+          <span class="testimonial__avatar">N</span>
+          <div><strong>Nadia, 44 ans</strong><br /><span>Testeuse fondatrice · Semaine 5</span></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="faq__head">
+      <p class="eyebrow">Vos questions</p>
+      <h2 class="h2">Tout ce que vous devez savoir avant de commander.</h2>
+    </div>
+    <div class="faq__list">
+      <details class="faq__item">
+        <summary>Est-ce que ça fonctionne vraiment ?</summary>
+        <div class="faq__answer">NUQA est formulé à l'Hexapeptide-8, un peptide étudié depuis plus de 20 ans pour ses effets sur l'apparence des plis du cou. Combiné au massage des galets, le rituel agit progressivement sur 3 à 4 semaines. Nous ne promettons pas l'effet d'un lifting chirurgical — nous proposons un soin quotidien ciblé sur la zone la plus négligée. Si le résultat ne vous convainc pas après 30 jours, nous vous remboursons.</div>
+      </details>
+      <details class="faq__item">
+        <summary>Au bout de combien de temps verrai-je des résultats ?</summary>
+        <div class="faq__answer">L'effet sensoriel (fraîcheur, confort, peau plus rebondie) est immédiat dès la première application. L'effet tenseur de l'Hexapeptide-8 se ressent généralement entre la 3e et la 5e semaine d'usage régulier — matin et soir. La constance prime sur l'intensité.</div>
+      </details>
+      <details class="faq__item">
+        <summary>Et si ça ne fonctionne pas pour moi ?</summary>
+        <div class="faq__answer">Vous bénéficiez de 30 jours pour tester NUQA. Si vous n'êtes pas convaincue, écrivez-nous à hello@nuqa.paris : remboursement sous 5 jours ouvrés, retour à nos frais, sans justification.</div>
+      </details>
+      <details class="faq__item">
+        <summary>Puis-je l'utiliser avec mon sérum / ma crème actuelle ?</summary>
+        <div class="faq__answer">Oui. NUQA s'applique en première intention sur le cou et le décolleté. Vous pouvez ensuite appliquer votre crème de jour sur le visage normalement. Aucune incompatibilité avec les actifs courants (rétinol, vitamine C, acides).</div>
+      </details>
+      <details class="faq__item">
+        <summary>À quelle fréquence dois-je l'appliquer ?</summary>
+        <div class="faq__answer">Idéalement matin et soir, en geste de 90 secondes. Si vous devez choisir, le soir est le moment le plus efficace — la peau régénère pendant la nuit.</div>
+      </details>
+      <details class="faq__item">
+        <summary>Convient-il aux peaux sensibles ?</summary>
+        <div class="faq__answer">Formule sans parfum, sans alcool, sans huiles essentielles. Convient aux peaux sensibles. Comme pour tout nouveau cosmétique, nous recommandons un test sur 24h dans le pli du coude avant le premier usage.</div>
+      </details>
+      <details class="faq__item">
+        <summary>Quelle différence avec un Gua Sha ou un roller jade ?</summary>
+        <div class="faq__answer">Trois différences : (1) NUQA combine la formule et l'applicateur en un seul geste — pas besoin d'appliquer une crème séparément ; (2) les galets sont conçus spécifiquement pour la morphologie du cou et du décolleté ; (3) le format est pensé pour un usage quotidien rapide, pas pour une session spa hebdomadaire.</div>
+      </details>
+      <details class="faq__item">
+        <summary>L'applicateur est-il hygiénique ?</summary>
+        <div class="faq__answer">Les galets se nettoient en 5 secondes sous l'eau tiède (puis sécher). Nous recommandons un nettoyage hebdomadaire. Le matériau est non-poreux et ne retient pas les bactéries.</div>
+      </details>
+      <details class="faq__item">
+        <summary>Pourquoi le tarif "édition fondatrice" à 49€ ?</summary>
+        <div class="faq__answer">NUQA est une marque qui se lance. Nous proposons un tarif préférentiel aux 200 premières clientes en échange de leur avis honnête après 4 semaines d'usage. Ces avis nous permettront ensuite d'améliorer le produit et la communication. Au-delà des 200 unités fondatrices, le tarif passera à 69€.</div>
+      </details>
+      <details class="faq__item">
+        <summary>D'où vient le produit ? Made in France ?</summary>
+        <div class="faq__answer">NUQA est une marque française. Le produit est fabriqué en Asie selon les standards de la réglementation cosmétique européenne (CE 1223/2009), notifié au CPNP (Cosmetic Products Notification Portal). Nous avons fait ce choix pour proposer un applicateur intégré de qualité à un prix accessible — un format encore peu maîtrisé par les fabricants européens.</div>
+      </details>
+      <details class="faq__item">
+        <summary>Livraison et retours ?</summary>
+        <div class="faq__answer">Livraison en France métropolitaine sous 48h ouvrées (Colissimo suivi). Offerte dès 50€ d'achat. Retours sous 30 jours, à nos frais, sans justification.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- REASSURANCE FOOT -->
+<section class="reassurance">
+  <div class="container">
+    <div class="reassurance__grid">
+      <div class="reassurance__item">
+        <svg class="reassurance__icon"><use href="assets/icons.svg#i-truck"/></svg>
+        <p class="reassurance__title">Livraison 48h</p>
+        <p class="reassurance__text">Offerte dès 50€</p>
+      </div>
+      <div class="reassurance__item">
+        <svg class="reassurance__icon"><use href="assets/icons.svg#i-return"/></svg>
+        <p class="reassurance__title">Remboursé 30 j</p>
+        <p class="reassurance__text">Retour offert</p>
+      </div>
+      <div class="reassurance__item">
+        <svg class="reassurance__icon"><use href="assets/icons.svg#i-check"/></svg>
+        <p class="reassurance__title">Paiement sécurisé</p>
+        <p class="reassurance__text">3D Secure · Stripe</p>
+      </div>
+      <div class="reassurance__item">
+        <svg class="reassurance__icon"><use href="assets/icons.svg#i-user"/></svg>
+        <p class="reassurance__title">Service client français</p>
+        <p class="reassurance__text">Lun-ven 9h-18h</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <div class="footer__logo">NUQA</div>
+        <p class="footer__tagline">Le geste oublié du soin anti-âge.</p>
+        <div class="footer__social">
+          <a href="#" aria-label="Instagram"><svg width="16" height="16"><use href="assets/icons.svg#i-instagram"/></svg></a>
+          <a href="#" aria-label="TikTok"><svg width="16" height="16"><use href="assets/icons.svg#i-tiktok"/></svg></a>
+          <a href="#" aria-label="Pinterest"><svg width="16" height="16"><use href="assets/icons.svg#i-pinterest"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h4 class="footer__heading">Boutique</h4>
+        <ul class="footer__list">
+          <li><a href="product.html">NUQA Lifting AH-8</a></li>
+          <li><a href="#">Bons cadeaux</a></li>
+          <li><a href="#">Édition fondatrice</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer__heading">Marque</h4>
+        <ul class="footer__list">
+          <li><a href="index.html#science">Notre science</a></li>
+          <li><a href="#">Notre histoire</a></li>
+          <li><a href="index.html#rituel">Le rituel</a></li>
+          <li><a href="#">Engagements</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer__heading">Aide</h4>
+        <ul class="footer__list">
+          <li><a href="#">Livraison</a></li>
+          <li><a href="#">Retours</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer__heading">Suivez-nous</h4>
+        <ul class="footer__list">
+          <li><a href="#">Instagram @nuqa.paris</a></li>
+          <li><a href="#">TikTok @nuqa.paris</a></li>
+          <li><a href="#">Pinterest</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div>© 2026 NUQA · Marque française · Fabriqué en Asie selon la réglementation cosmétique européenne CE 1223/2009</div>
+      <div class="footer__legal-links">
+        <a href="#">Mentions légales</a>
+        <a href="#">CGV</a>
+        <a href="#">Confidentialité</a>
+        <a href="#">Cookies</a>
+      </div>
+      <div class="footer__payments">
+        <span>Visa</span><span>MC</span><span>Amex</span><span>Apple Pay</span><span>PayPal</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Mobile sticky add-to-cart -->
+<div class="sticky-cta is-visible">
+  <div>
+    <span class="sticky-cta__price-old">69€</span>
+    <span class="sticky-cta__price">49€</span>
+  </div>
+  <button class="btn btn-gold" id="stickyAdd">Ajouter au panier</button>
+</div>
+
+<script src="assets/app.js" defer></script>
+</body>
+</html>
